@@ -33,6 +33,9 @@ const StartMenu = ({ onClose }: { onClose: () => void }) => {
   const handleCloseTerminal = () => {
     setIsTerminalOpen(false); // open the Terminal Component
   };
+  const handleRestart = () => {
+    window.location.reload(); // Reloads the current page
+  };
 
   return (
     <div>
@@ -79,8 +82,12 @@ const StartMenu = ({ onClose }: { onClose: () => void }) => {
 
         <div className="bg-white w-64 h-max p-2 my-2 flex justify-between">
           <p className="text-black py-2">shutdown </p>
-          <button className="bg-red-700 h-8 w-8 p-1 rounded-md">
-            <img src={ShutDown} alt="Close" width="40" height="40" />
+          <button
+            className="bg-red-700 h-8 w-8 p-1 rounded-md"
+            onClick={handleRestart}
+          >
+            <img src={ShutDown} alt="Close" width="100%" height="100%" />{" "}
+            {/* Image now scales to button size */}
           </button>
         </div>
       </div>

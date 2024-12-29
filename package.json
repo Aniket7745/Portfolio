@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "git": "^0.1.5",
+    "main": "^1000.0.1",
+    "origin": "^0.5.8",
+    "push": "^0.1.1",
     "react": "^18.3.1",
     "react-clock": "^5.1.0",
     "react-dom": "^18.3.1",

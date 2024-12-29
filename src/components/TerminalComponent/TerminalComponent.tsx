@@ -2,13 +2,13 @@ import React from "react";
 import { ReactTerminal } from "react-terminal";
 
 function TerminalComponent() {
-  const [theme, setTheme] = React.useState("dracula");
+  const [theme, setTheme] = React.useState("material-dark");
   const [controlBar, setControlBar] = React.useState(true);
   const [controlButtons, setControlButtons] = React.useState(true);
-  const [prompt, setPrompt] = React.useState(">>>");
+  const [prompt, setPrompt] = React.useState("Users  ");
 
   const files = ["resume", "Contact", "About"];
-  const [currentDirectory] = React.useState("/");
+  const [currentDirectory] = React.useState(">$");
 
   const commands = {
     help: (
