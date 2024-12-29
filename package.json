@@ -15,6 +15,7 @@
     "react-dom": "^18.3.1",
     "react-draggable": "^4.4.6",
     "react-spinners": "^0.15.0",
+    "react-terminal": "^1.4.4",
     "react-toastify": "^11.0.2",
     "styled-components": "^6.1.13"
   },
