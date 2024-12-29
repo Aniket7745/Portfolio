@@ -25,3 +25,12 @@ To clone this repository, follow these steps:
 
 ```sh
 git clone https://github.com/Aniket7745/Portfolio.git
+Navigate into the project directory:
+```sh
+cd Portfolio
+npm install
+npm run dev
+
+
+Visit https://portfolio-navy-five-21.vercel.app to view the deployed version of the portfolio
+
