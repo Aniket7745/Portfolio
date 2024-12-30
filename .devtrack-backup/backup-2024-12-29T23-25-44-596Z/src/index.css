@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Bentham&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-image: url("../src/assets/windows_xp_original-wallpaper-1920x1080.jpg");
+}
+a {
+  color: red;
+}

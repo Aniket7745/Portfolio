@@ -1,10 +1,15 @@
-import "./App.css";
-import Desktop from "./components/Desktop";
+import './App.css';
+import Desktop from './components/Desktop';
 
 import LoadingScreen from "../src/components/LodeingScreen";
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
+
 
 function App() {
+
+
+
+  
   const [isLoading, setIsLoading] = useState(true); // State to track if loading
 
   useEffect(() => {
@@ -18,11 +23,12 @@ function App() {
 
   return (
     <>
-      {isLoading ? (
-        <LoadingScreen />
-      ) : (
+     
+      {isLoading ? <LoadingScreen /> : (
         <>
           <Desktop />
+          
+          
         </>
       )}
     </>
@@ -30,3 +36,4 @@ function App() {
 }
 
 export default App;
+
