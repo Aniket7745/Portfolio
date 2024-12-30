@@ -69,7 +69,7 @@ const StartMenu = ({ onClose }: { onClose: () => void }) => {
             className="text-zinc-950 cursor-pointer"
             onClick={handleOpenResume}
           >
-            Resume
+            Contact
           </p>
           <p className="text-zinc-950  cursor-pointer">Credit</p>
           <p
