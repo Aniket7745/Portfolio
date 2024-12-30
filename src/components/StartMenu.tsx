@@ -63,13 +63,13 @@ const StartMenu = ({ onClose }: { onClose: () => void }) => {
         </div>
         <div className="bg-white w-64 h-max p-2 my-2 flex-col justify-items-start">
           <p className="text-zinc-950 cursor-pointer" onClick={handleOpenAbout}>
-            About
+            Contact
           </p>
           <p
             className="text-zinc-950 cursor-pointer"
             onClick={handleOpenResume}
           >
-            Contact
+            Resume
           </p>
           <p className="text-zinc-950  cursor-pointer">Credit</p>
           <p
