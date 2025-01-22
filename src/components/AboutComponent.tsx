@@ -31,7 +31,7 @@ const AboutComponent = ({ onClose }: { onClose: () => void }) => {
 
   return (
     <Draggable>
-      <div className="bg-gray-100 absolute z-50 top-1/3 left-1/2 block w-max px-2 py-1 shadow-lg">
+      <div className="bg-gray-100 absolute z-50 top-[20vh] left-[20vh] block w-max px-2 py-1 shadow-lg">
         {/* Title bar */}
         <div className="bg-Blue w-96 h-max p-2 flex justify-between items-center">
           <div className="text-white text-lg">Contact.txt</div>

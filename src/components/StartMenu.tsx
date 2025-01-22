@@ -5,11 +5,14 @@ import AboutComponent from "./AboutComponent";
 import profilePicture from "../assets/profilePicture.png";
 import ShutDown from "../assets/Shutdown.png";
 import Terminal from "./Terminal";
+import Project from "./Project";
 
 const StartMenu = ({ onClose }: { onClose: () => void }) => {
   const [isAboutOpen, setIsAboutOpen] = useState(false); // State to manage AboutComponent visibility
   const [isResumeOpen, setIsResumeOpen] = useState(false); // State to manage Resume visibility
   const [isTerminalOpen, setIsTerminalOpen] = useState(false); // State to manage terminal visibility
+
+  const [isProjectOpen, setIsProjectOpen] = useState(false);
 
   const handleOpenAbout = () => {
     setIsAboutOpen(true); // Open the AboutComponent
@@ -36,6 +39,15 @@ const StartMenu = ({ onClose }: { onClose: () => void }) => {
   const handleRestart = () => {
     window.location.reload(); // Reloads the current page
   };
+
+  const handleOpenProject = () => {
+    setIsProjectOpen(true); // Open the Project
+  };
+
+  const handleCloseProject = () => {
+    setIsProjectOpen(false); // open the Project
+  };
+
 
   return (
     <div>
@@ -71,7 +83,12 @@ const StartMenu = ({ onClose }: { onClose: () => void }) => {
           >
             Resume
           </p>
-          <p className="text-zinc-950  cursor-pointer">Credit</p>
+          <p 
+          className="text-zinc-950  cursor-pointer" 
+          onClick={handleOpenProject}
+          >
+            Project
+          </p>
           <p
             className="text-zinc-950  cursor-pointer"
             onClick={handleOpenTerminal}
@@ -94,6 +111,7 @@ const StartMenu = ({ onClose }: { onClose: () => void }) => {
       {isResumeOpen && <Resume onClose={handleCloseResume} />}
       {isAboutOpen && <AboutComponent onClose={handleCloseAbout} />}
       {isTerminalOpen && <Terminal onClose={handleCloseTerminal} />}
+      {isProjectOpen && <Project onClose={handleCloseProject} />}
     </div>
   );
 };

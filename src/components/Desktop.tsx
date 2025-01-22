@@ -7,11 +7,15 @@ import Footer from "./Footer";
 import Terminal from "./Terminal";
 import cmd from "../assets/cmd.png";
 import Clippy from "../assets/clippy.gif";
+import Project from "./Project";
 
 const Desktop = () => {
   const [isAboutOpen, setIsAboutOpen] = useState(false); // State to manage AboutComponent visibility
   const [isResumeOpen, setIsResumeOpen] = useState(false); // State to manage Resume visibility
   const [isTerminalOpen, setIsTerminalOpen] = useState(false); // State to manage terminal visibility
+
+  const [isProjectOpen, setIsProjectOpen] = useState(false); // State to manage Project visibility
+  
 
   const handleOpenAbout = () => {
     setIsAboutOpen(true); // Open the AboutComponent
@@ -35,6 +39,16 @@ const Desktop = () => {
   const handleCloseTerminal = () => {
     setIsTerminalOpen(false); // open the Terminal Component
   };
+
+  const handleOpenProject = () => {
+    setIsProjectOpen(true); // Open the Project
+  };
+
+  const handleCloseProject = () => {
+    setIsProjectOpen(false); // open the Project
+  };
+
+
 
   const [isVisible, setIsVisible] = useState(true);
 
@@ -74,6 +88,7 @@ const Desktop = () => {
           />
           <p className="font-xp2 ">Resume </p>
         </div>
+        
         <div className="w-max  cursor-pointer">
           <img
             src={cmd}
@@ -84,9 +99,21 @@ const Desktop = () => {
           />
           <p className="font-xp2 ">Comand prompt</p>
         </div>
+        <div className="w-max  cursor-pointer">
+          <img
+            src={folder}
+            alt="myPC"
+            width="64"
+            height="64"
+            onClick={handleOpenProject}
+          />
+          <p className="font-xp2 ">Project </p>
+        </div>
       </div>
       {isResumeOpen && <Resume onClose={handleCloseResume} />}
       {isAboutOpen && <AboutComponent onClose={handleCloseAbout} />}
+      {isProjectOpen && <Project onClose={handleCloseProject} />}
+      
       <div className="h-10 w- top-96 left-96">
         {isTerminalOpen && <Terminal onClose={handleCloseTerminal} />}
       </div>
