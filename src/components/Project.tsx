@@ -24,7 +24,7 @@ const Project = ({ onClose }: { onClose: () => void }) => {
             href="https://github.com/Aniket7745/White-Board"
             target="_blank"
           >
-            <p >Project-1</p>
+            <p className="flex ">Project-1</p>
             
           </a>
         </div>

@@ -19,7 +19,16 @@ const Resume = ({ onClose }: { onClose: () => void }) => {
 
         <div className="bg-white w-96 h-max p-2 my-2 flex-col justify-items-start">
           <img src={text} alt="myPC" width="64" height="34" />
-          <p className="text-black">Resume.txt</p>
+          <a
+             className="text-zinc-950 hover:text-blue-500 block"
+             href="https://drive.google.com/file/d/1EvlRrE3kUFPgijMXO81RnGDKAINrqIjn/view?usp=sharing"
+             target="_blank"
+             rel="noopener noreferrer"
+             download
+          >
+            <p className="flex ">Resume.txt</p>
+            
+          </a>
         </div>
       </div>
     </Draggable>

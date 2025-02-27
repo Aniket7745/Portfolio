@@ -46,14 +46,14 @@ const AboutComponent = ({ onClose }: { onClose: () => void }) => {
         <div className="bg-white w-96 h-max p-2 my-2 flex-col justify-items-start">
           <h1 className="text-zinc-950">Let's connect</h1>
           <a
-            className="text-zinc-950 hover:text-blue-500 block"
+            className="text-zinc-950 hover:text-blue-500 flex"
             href="https://github.com/Aniket7745"
             target="_blank"
           >
             @github.com/Aniket7745
           </a>
           <a
-            className="text-zinc-950 px-1 hover:text-blue-500"
+            className="text-zinc-950 px-1 hover:text-blue-500 flex"
             href="https://www.instagram.com/okok.charity/"
             target="_blank"
           >
@@ -61,7 +61,7 @@ const AboutComponent = ({ onClose }: { onClose: () => void }) => {
           </a>
 
           <p
-            className={`text-zinc-950 px-0 hover:text-blue-500 ${
+            className={`text-zinc-950 px-0 hover:text-blue-500 flex ${
               copied ? "copied" : ""
             }`}
             onClick={handleCopy}
@@ -70,7 +70,7 @@ const AboutComponent = ({ onClose }: { onClose: () => void }) => {
             @kunduaniket440@gmail.com
           </p>
           <p
-            className={`text-zinc-950 px-0 hover:text-blue-500 ${
+            className={`text-zinc-950 px-0 hover:text-blue-500 flex${
               copied ? "copied" : ""
             }`}
             onClick={handleCopyNumber}

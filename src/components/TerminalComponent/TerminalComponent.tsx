@@ -77,7 +77,19 @@ function TerminalComponent() {
       return "Restarting the website...";
     },
     resume: () => {
-      return "resume.txt";
+      return (
+        <>
+          <a
+             className="text-zinc-950 hover:text-blue-500 block"
+             href="https://drive.google.com/file/d/1EvlRrE3kUFPgijMXO81RnGDKAINrqIjn/view?usp=sharing"
+             target="_blank"
+             rel="noopener noreferrer"
+             download
+          >
+            <p className="flex ">Resume.txt</p>
+            
+          </a></>
+      );
     },
     contact: () => {
       return (
